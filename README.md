@@ -124,7 +124,7 @@ yarn dev
 
 ## Contact
 For queries or feedback, reach out at:
-- Name: Sugash Srimari R
+- Name: Sugash Srimari Rajendran 
 - Email: sugash.smr@gmail.com
 - GitHub: sugashsm
 
