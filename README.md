@@ -1,4 +1,4 @@
-# CVE Project
+# CVE 
 
 This project is part of the recruitment process for **Securin** and demonstrates skills in logical problem-solving, code quality, and a structured approach to addressing the task requirements. Below are the details of the project setup, implementation, and usage.
 
