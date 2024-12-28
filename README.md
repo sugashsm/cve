@@ -1,6 +1,12 @@
 # CVE 
 
-This project is part of the recruitment process for **Securin** and demonstrates skills in logical problem-solving, code quality, and a structured approach to addressing the task requirements. Below are the details of the project setup, implementation, and usage.
+A full-stack project that integrates with the NVD CVE API to fetch, process, and visualize Common Vulnerabilities and Exposures (CVE) data. This application includes a backend for data ingestion and API services, a frontend for dynamic UI visualization, and a MongoDB database for secure storage.
+
+Tech Stack:
+- Frontend: Next.js, Tailwind CSS
+- Backend: Node.js
+- Database: MongoDB
+- API: NVD CVE API
 
 ## Table of Contents
 - [Project Overview](#project-overview)
