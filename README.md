@@ -100,27 +100,26 @@ npm run dev
 ```
 yarn dev
 ```
-#Approach
-Data Fetching: Consumes data from the NVD CVE API using efficient pagination.
-Data Cleansing: Deduplicates and cleans data before storing in MongoDB.
-Backend: Implements APIs for flexible data fetching.
-Frontend: Built with Next.js and Tailwind CSS for dynamic and responsive UI.
-Testing: Unit tests ensure reliable functionality.
-#Screenshots 
+## Approach
+- Data Fetching: Consumes data from the NVD CVE API using efficient pagination.
+- Data Cleansing: Deduplicates and cleans data before storing in MongoDB.
+- Backend: Implements APIs for flexible data fetching.
+- Frontend: Built with Next.js and Tailwind CSS for dynamic and responsive UI.
+- Testing: Unit tests ensure reliable functionality.
+## Screenshots 
 
 ![image](https://github.com/user-attachments/assets/d44fc85d-643b-47e8-80f1-1d25389be321)
 ![image](https://github.com/user-attachments/assets/329397f2-9d4c-4079-aa63-d106d96c9ac2)
 
-#Future Enhancements
-Add advanced filtering and sorting options.
-Implement authentication and authorization.
-Provide detailed CVE analytics using charts.
-Automate batch updates using cron jobs.
+##Future Enhancements
+- Add advanced filtering and sorting options.
+- Implement authentication and authorization.
+- Provide detailed CVE analytics using charts.
 
-# Contact
+## Contact
 For queries or feedback, reach out at:
-Name: Sugash Srimari R
-Email: sugash.smr@gmail.com
-GitHub: sugashsm
+- Name: Sugash Srimari R
+- Email: sugash.smr@gmail.com
+- GitHub: sugashsm
 
 
