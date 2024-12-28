@@ -9,7 +9,7 @@ This project is part of the recruitment process for **Securin** and demonstrates
 - [Setup Instructions](#setup-instructions)
 - [Approach](#approach)
 - [Screenshots](#screenshots)
-- [Future Enhancement](#future-enhancement)
+- [Future Enhancement](#future-enhancements)
 - [Contact](#contact)
 
 ---
