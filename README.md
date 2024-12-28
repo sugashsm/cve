@@ -39,7 +39,7 @@ This project involves fetching CVE (Common Vulnerabilities and Exposures) data f
    - Periodically synchronize the CVE database in batch mode (full refresh or incremental updates).
 
 4. **Develop APIs**:
-   - Fetch and filter CVE details by:
+   - Fetch CVE details by:
      - CVE ID
      - Specific year
      - CVE Score
