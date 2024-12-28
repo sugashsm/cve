@@ -1,5 +1,4 @@
 # CVE 
-
 A full-stack project that integrates with the NVD CVE API to fetch, process, and visualize Common Vulnerabilities and Exposures (CVE) data. This application includes a backend for data ingestion and API services, a frontend for dynamic UI visualization, and a MongoDB database for secure storage.
 
 Tech Stack:
