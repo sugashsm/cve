@@ -84,7 +84,7 @@ cve/
 ```
 npm install
 ```
-# Or, if you prefer Yarn:
+## if you prefer Yarn:
 ```
 yarn install
 ```
@@ -96,7 +96,7 @@ MONGO_URI=<your_mongodb_connection_string>
 ```
 npm run dev
 ```
-# Or, if using Yarn:
+## if using Yarn:
 ```
 yarn dev
 ```
@@ -111,7 +111,7 @@ yarn dev
 ![image](https://github.com/user-attachments/assets/d44fc85d-643b-47e8-80f1-1d25389be321)
 ![image](https://github.com/user-attachments/assets/329397f2-9d4c-4079-aa63-d106d96c9ac2)
 
-##Future Enhancements
+## Future Enhancements
 - Add advanced filtering and sorting options.
 - Implement authentication and authorization.
 - Provide detailed CVE analytics using charts.
