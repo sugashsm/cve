@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# CVE Project
 
-## Getting Started
+This project is part of the recruitment process for **Securin** and demonstrates skills in logical problem-solving, code quality, and a structured approach to addressing the task requirements. Below are the details of the project setup, implementation, and usage.
 
-First, run the development server:
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Problem Statement](#problem-statement)
+- [Folder Structure](#folder-structure)
+- [Setup Instructions](#setup-instructions)
+- [Usage Instructions](#usage-instructions)
+- [Approach](#approach)
+- [Screenshots](#screenshots)
+- [Contact](#contact)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## Project Overview
+
+This project involves fetching CVE (Common Vulnerabilities and Exposures) data from the NVD API, processing it, and storing it in a database. It provides a UI to display, filter, and interact with the data. The project adheres to best practices and ensures data quality and vulnerability-free code.
+
+---
+
+## Problem Statement
+
+1. **Fetch CVE Data**: Consume CVE information from the NVD CVE API and store it in a database.
+   - API Base URL: `https://services.nvd.nist.gov/rest/json/cves/2.0`
+   - Use pagination (`startIndex` and `resultsPerPage`) to access all CVEs.
+
+2. **Data Processing**:
+   - Cleanse and deduplicate data.
+   - Ensure high data quality.
+
+3. **Batch Synchronization**:
+   - Periodically synchronize the CVE database in batch mode (full refresh or incremental updates).
+
+4. **Develop APIs**:
+   - Fetch and filter CVE details by:
+     - CVE ID
+     - Specific year
+     - CVE Score
+     - Last modified in N days
+
+5. **UI Visualization**:
+   - Display CVE data in a table with a "Total Records" count.
+   - Include "Results Per Page" options (`10`, `50`, `100`) to dynamically update displayed records.
+
+
+
+## Folder Structure
+
 ```
+cve/
+├── .next/                  # Next.js build files
+├── app/                    # Application files
+│   ├── api/cve/            # API endpoints
+│   │   ├── [id]/           # Fetch CVE by ID
+│   │   └── cves/           # Fetch CVEs
+│   │       └── [id]/       # Fetch CVE details
+│   ├── list/               # List page
+│   │   └── page.js         # Main list page
+│   ├── layout.js           # Layout configuration
+│   └── page.js             # Root page
+├── lib/                    # Libraries and utilities
+│   ├── models/             # Database models
+│   │   └── cve.js          # CVE model
+│   └── utils/              # Utility functions
+│       └── mongodb.js      # MongoDB connection
+├── public/                 # Static assets
+├── .env.local              # Environment variables
+├── .gitignore              # Git ignored files
+├── jsconfig.json           # JS configuration
+├── next.config.mjs         # Next.js configuration
+├── package.json            # Dependencies
+├── README.md               # Project documentation
+├── tailwind.config.mjs     # Tailwind CSS configuration
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+## Setup Instructions
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/cve-project.git
+   cd cve-project
