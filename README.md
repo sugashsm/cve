@@ -107,11 +107,25 @@ npm run dev
 yarn dev
 ```
 ## Approach
-- Data Fetching: Consumes data from the NVD CVE API using efficient pagination.
-- Data Cleansing: Deduplicates and cleans data before storing in MongoDB.
-- Backend: Implements APIs for flexible data fetching.
-- Frontend: Built with Next.js and Tailwind CSS for dynamic and responsive UI.
-- Testing: Unit tests ensure reliable functionality.
+1. **Initial Data Fetch**:
+- Use the NVD CVE API to fetch all CVE data during the initial setup or a scheduled batch synchronization process.
+- Fetch data in batches using startIndex and resultsPerPage for pagination.
+
+2. **Data Processing and Storage**:
+- Process the fetched data to ensure it is cleansed and deduplicated.
+- Store the processed data in MongoDB using a defined schema.
+  
+3. **Data Retrieval**:
+- APIs fetch data directly from MongoDB for frontend requests, eliminating the need for repeated API calls to the NVD service.
+
+4. **UI Visualization**:
+- Build a responsive interface using Next.js and Tailwind CSS.
+- Display CVE data in a paginated table with options to filter and sort.
+
+5. **Testing**:
+- Ensure all API endpoints and UI features are covered with appropriate unit and integration tests.
+
+
 ## Screenshots 
 
 ![image](https://github.com/user-attachments/assets/d44fc85d-643b-47e8-80f1-1d25389be321)
