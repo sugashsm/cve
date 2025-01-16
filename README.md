@@ -128,8 +128,12 @@ yarn dev
 
 ## Screenshots 
 
-![image](https://github.com/user-attachments/assets/d44fc85d-643b-47e8-80f1-1d25389be321)
-![image](https://github.com/user-attachments/assets/329397f2-9d4c-4079-aa63-d106d96c9ac2)
+![Image1](https://github.com/user-attachments/assets/bee28163-191c-4000-8f46-7c719df2aebe)
+![Image2](https://github.com/user-attachments/assets/b8a96eef-d573-4fa1-b11e-2312c6e0beaa)
+![Image3](https://github.com/user-attachments/assets/a5010a01-9650-40c5-a936-649db20555b4)
+
+
+
 
 ## Future Enhancements
 - Add advanced filtering and sorting options.
