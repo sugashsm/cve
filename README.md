@@ -136,7 +136,6 @@ yarn dev
 
 
 ## Future Enhancements
-- Add advanced filtering and sorting options.
 - Implement authentication and authorization.
 - Provide detailed CVE analytics using charts.
 
